@@ -1,0 +1,84 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333333;
+    padding: 60px 0;
+}
+
+h1, h2, h3 {
+    color: #3498db;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+section {
+    margin: 40px 0;
+    padding: 40px 0;
+}
+
+@media (max-width: 767px) {
+    img {
+        width: 100%;
+    }
+}
+
+p{
+    color: #8f8f8f;
+}
+.whitetext{
+    color: #fff;
+}
+.big-heading {
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/*containers*/
+.container-fluid{
+    padding: 7% 15%;  
+}
+
+/*sections*/
+.colored-section {
+    background-color:#0C356A;;
+    color: #fff;
+}
+
+/*navigation bar*/
+.navbar{
+    padding: 0 0 4.5rem;  
+}
+.navbar-brand{
+    font-family: "ubuntu";
+    font-size: 2.5rem;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.nav-link:hover {
+    color: black;
+}
+
+
+.download-button{
+    margin: 5% 3% 5% 0; 
+}
+
+/* footer section */
+.footer-icons {
+    padding: 3% 1%;
+}
+.footer-icons:hover {
+    color: #3498db;;
+}
+
