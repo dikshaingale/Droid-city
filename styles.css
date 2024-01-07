@@ -3,22 +3,41 @@ body {
     text-align: center;
     background-color: #1a1a1a;
     color: #ffffff;
+    margin: 0;
 }
 
 header {
     background-color: #333333;
     padding: 60px 0;
+    animation: fadeInUp 1s ease-out;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(90, 167, 202, 0.5);
+    transition: 0.3s;
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 h1, h2, h3 {
     color: #3498db;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 section {
     margin: 40px 0;
     padding: 40px 0;
+    border-radius: 10px;
 }
 
 @media (max-width: 767px) {
@@ -52,10 +71,11 @@ p{
 /*navigation bar*/
 .navbar{
     padding: 0 0 4.5rem;  
-}
+ }
 .navbar-brand{
     font-family: "ubuntu";
     font-size: 2.5rem;
+    transition: color 0.3s ease;
 }
 .nav-item{
     padding: 0 18px;
@@ -63,22 +83,99 @@ p{
 .nav-link{
     font-family: "Montserrat";
     font-size: 1.2rem;
-    font-weight: lighter;
+    font-weight: bolder;
+    transition: color 0.3s ease-in-out;
 }
 .nav-link:hover {
-    color: black;
+    /*color: black; */
+     color: #3498db;
 }
 
 
-.download-button{
-    margin: 5% 3% 5% 0; 
+.btn{
+    margin: 5% 3% 5% 0;
+    transition: transform 0.3s ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+.fa-brands{
+    padding-right: 10px;
 }
 
+
+.animated {
+    /* opacity: 0; */
+    transition: opacity 1s;
+}
+
+.animated.in-view {
+    opacity: 1;
+}
+
+/*featured apps*/
+.showcase-img{
+    padding: 20px;
+}
+.shadow-effect{
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(173, 178, 180, 0.5);
+    transition: 0.3s;
+}
+.col{
+    margin: 20px 30px 5px;
+    padding: 0 15px 15px;
+}
+/*about us and contactus*/
+    
 /* footer section */
 .footer-icons {
     padding: 3% 1%;
+    transition: transform 0.3s ease-in-out;
 }
+
 .footer-icons:hover {
-    color: #3498db;;
+    color: #3498db;
+    transform: scale(1.1);
+}
+
+/*animate on scroll */
+.animated {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-toggler {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .big-heading {
+        font-size: 2.5rem;
+    }
+
+    .container-fluid {
+        padding: 7% 3%;
+    }
 }
 
